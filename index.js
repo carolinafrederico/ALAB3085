@@ -30,3 +30,27 @@ for (let index = 0; index < myString.length; index++) {
 return longestString
 }
 console.log(getLongestString(myString))
+
+// Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
+function longerArray(array, number) {
+    let newArray=[];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > number) {
+            newArray.push(array[i]);
+        }
+        }
+        return newArray  
+    }
+    console.log(longerArray(myString, 3));
+
+    // Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+
+    function printN(n) {
+        if(n>0){
+        printN(n-1);
+        console.log(n + " ");    
+        }
+        
+        return;
+    }
+    console.log(printN(7));
